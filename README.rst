@@ -31,11 +31,11 @@ Dependencies
 Installation
 -------------
 
-On Linux:
+On Linux::
 
     sudo pip install -r requirements.txt
 
-On Windows:
+On Windows::
 
     sudo pip install -r requirements.txt
 
@@ -46,6 +46,8 @@ pip and the whole `PATH` issues are resolved.
 
 Usage
 -----
+
+Usage is really easy, create the database and run the server::
 
     python manage.py syncdb
     python manage.py runserver
