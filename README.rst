@@ -47,5 +47,5 @@ pip and the whole `PATH` issues are resolved.
 Usage
 -----
 
-python manage.py syncdb
-python manage.py runserver
+    python manage.py syncdb
+    python manage.py runserver
