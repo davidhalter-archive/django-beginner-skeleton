@@ -21,6 +21,7 @@ def index(request):
             return redirect('/')
     else:
         form = BankForm()  # An unbound form
+    print('xy', form.errors)
 
     bank_list = models.Bank.objects.all().order_by('name')
     context = {'bank_form': form,

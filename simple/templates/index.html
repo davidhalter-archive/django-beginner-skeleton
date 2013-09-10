@@ -4,11 +4,27 @@
 
 {% block container %}
     <h2>Simple Application: Add a Bank</h2>
-    <p>this a bank</p>
-    <form>
-        {{ bank_form }}
-        <input type="submit" />
+    <form role="form" method='POST'>
+        {% for field in bank_form %}
+
+            <div class="form-group">
+                {{ field.label_tag }} 
+                
+                {% if field.errors %}
+                    <div class="alert alert-danger">
+                        {{ field.errors }}
+                    </div>
+                {% endif %}
+
+                <input type="{{ field.html_name }}" class="form-control"
+                        value="{{ field.value | default:"" }}"
+                        name="{{ field.name }}" />
+            </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-default">Submit</button>
+        {% csrf_token %}
     </form>
+
     <h2>Already added banks</h2>
     <table>
         <tr>
