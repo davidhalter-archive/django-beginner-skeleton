@@ -1,4 +1,4 @@
-Simple django project skeleton for beginners
+Simple Django project skeleton for beginners
 ============================================
 
 This is a small project I give to students that want to learn Python. It's a
@@ -10,6 +10,15 @@ confronted with complicated installations (huge requirements).
 
 This project should also be working on Windows as well as both Python
 2.7 and Python >=3.2.
+
+The only Django dependency is `django frontend skeleton
+<https://github.com/jonfaustman/django-frontend-skeleton>`_, to make the
+bootstrap stuff easy.
+
+Obviously the forms can and should be done differently, check `crispy forms
+<https://github.com/maraujop/django-crispy-forms>`_ for that. I removed that
+intentionally, since I find it important for beginners to see how forms in
+Django work.
 
 
 Dependencies
