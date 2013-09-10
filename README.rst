@@ -8,6 +8,9 @@ banks.
 The goal of this project is to make it easy to get started and not to be
 confronted with complicated installations (huge requirements).
 
+This project should also be working on Windows as well as both Python
+2.7 and Python >=3.2.
+
 
 Dependencies
 ------------
