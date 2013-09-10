@@ -26,19 +26,26 @@
     </form>
 
     <h2>Already added banks</h2>
-    <table>
+    <table class="table table-striped">
         <tr>
             <th>Name</th>
             <th>City</th>
             <th>Boss</th>
             <th>Phone</th>
-        <tr>
+        </tr>
+
         {% for bank in bank_list %}
-            <td>{{ bank.name }}</td>
+        <tr>
+            <td><a href='/show/{{ bank.id }}'>{{ bank.name }}</a></td>
             <td>{{ bank.city }}</td>
             <td>{{ bank.boss }}</td>
             <td>{{ bank.phone }}</td>
-        {% endfor %}
         </tr>
+        {% endfor %}
     </table>
+    {% if not bank_list %}
+        <div class="alert alert-warning">
+            No banks added yet, please add one first.
+        </div>
+    {% endif %}
 {% endblock %}
