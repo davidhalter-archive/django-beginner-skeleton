@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block container %}
+  <h1>Bank</h1>
+  <dl class="dl-horizontal">
+    <dt>Name</dt>
+    <dd>{{ bank.name }}</dd>
+    <dt>Boss</dt>
+    <dd>{{ bank.boss }}</dd>
+    <dt>City</dt>
+    <dd>{{ bank.city }}</dd>
+    <dt>Phone</dt>
+    <dd>{{ bank.phone }}</dd>
+  </ul>
+{% endblock %}

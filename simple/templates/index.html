@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Django Skeleton with Bootstrap{% endblock %}
+
+{% block container %}
+    <h2>Simple Application: Bank Register</h2>
+    <p>this a bank</p>
+    <form>
+        {{ bank_form }}
+        <input type="submit" />
+    </form>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Boss</th>
+            <th>Phone</th>
+        <tr>
+        {% for bank in bank_list %}
+            <td>{{ bank.name }}</td>
+            <td>{{ bank.city }}</td>
+            <td>{{ bank.boss }}</td>
+            <td>{{ bank.phone }}</td>
+        {% endfor %}
+        </tr>
+    </table>
+{% endblock %}
