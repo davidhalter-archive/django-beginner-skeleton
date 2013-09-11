@@ -24,8 +24,14 @@ Django work.
 Dependencies
 ------------
 
-- sqlite3
+- sqlite3 (In a lot of systems pre-installed)
 - python/pip
+
+
+You might want to use `Active Python
+<http://www.activestate.com/activepython>`_ on Windows, because it comes with
+pip and the whole `PATH` issues are resolved. It also includes sqlite3.
+**Active Python is the easiest and only SANE way to get started with Windows.**
 
 
 Installation
@@ -37,12 +43,7 @@ On Linux::
 
 On Windows::
 
-    sudo pip install -r requirements.txt
-
-You might want to use `Active Python
-<http://www.activestate.com/activepython>`_ on Windows, because it comes with
-pip and the whole `PATH` issues are resolved.
-
+    pip install -r requirements.txt
 
 Usage
 -----
