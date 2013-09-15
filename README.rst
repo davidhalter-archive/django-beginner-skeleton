@@ -21,6 +21,9 @@ intentionally, since I find it important for beginners to see how forms in
 Django work.
 
 
+License: MIT - see ``LICENSE.txt``.
+
+
 Dependencies
 ------------
 
