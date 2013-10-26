@@ -1,2 +1,2 @@
-Django
-django-frontend-skeleton
+Django==1.5.5
+django-frontend-skeleton==1.2.0
